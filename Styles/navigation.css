@@ -1,0 +1,104 @@
+
+.navigation-wrapper {
+    height: 100px;
+    /* background-color: #abb367; */
+    /* background: linear-gradient(90deg, #cfecd0, #ffc5ca); */
+    /* background-color: #f6d59c; */
+    background: linear-gradient(180deg, #f3bf8c, #f6deb1);
+    color: #473C33;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 40px 100px;
+    /* box-shadow: 0px 100px 143px -95px rgba(250,107,126,0.88) inset; */
+    /* border: 20px double #8fb34d;*/
+}
+
+.left {
+    width: 330px;
+}
+
+.left a {
+    display: flex;
+    font-family: 'Handlee', cursive;
+    font-size: 2em;
+    color: #65451F;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.left a:hover {
+letter-spacing: 4px;
+}
+
+.navigation-wrapper > .middle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 22px;
+    width: 400px;
+    text-decoration: none;
+    
+    
+}
+
+.navigation-wrapper > .middle > .navigation {
+    width: 80px ;
+    /* align-items: center; */
+    text-align: center;
+}
+
+.navigation-wrapper > .middle > .navigation a {
+    text-decoration: none;
+    font-family: 'Patrick Hand', cursive;
+    color: #535204;
+    transition: 0.5s;
+   
+}
+
+.navigation-wrapper > .middle > .navigation a:hover {
+color: #523906;
+font-size: 1.1em;
+}
+
+
+
+.navigation-wrapper > .right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.navigation-wrapper > .right > .insta-icon i {
+color: #535204;
+text-decoration: none;
+font-size: 1.2em;
+transition: 0.5s;
+
+}
+.navigation-wrapper > .right > .insta-icon i:hover {
+    color: #3F2305;
+
+}
+.navigation-wrapper > .right > .share-icon i {
+    color: #535204;
+text-decoration: none;
+font-size: 1.1em;
+transition: 0.5s;
+
+}
+.navigation-wrapper > .right > .share-icon i:hover {
+    color: #3F2305;
+}
+
+.navigation-wrapper > .right > .bars-icon i {
+    color: #535204;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: 0.5s;
+}
+.navigation-wrapper > .right > .bars-icon i:hover {
+    color: #3F2305;
+}
+
