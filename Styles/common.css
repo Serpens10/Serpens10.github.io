@@ -1,4 +1,63 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+   
+}
+
 body {
-    margin: 0px;
-    
+font-size: 1rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+h2 {
+    font-size: 2.25rem;
+}
+h3 {
+    font-size: 1.25rem;
+}
+
+@media (min-width: 800px) {
+    h1 {
+        font-size: 4.5rem;
+    }
+    h2 {
+        font-size: 3.75rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    body {
+        font-size: 1.125rem;
+    }
+}
+
+/* general styles */
+
+body {
+    background-color: #ffff;
+    color: #25160d;
+    margin: 0;
+    font-family: 'nunito sans' , sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* typography */
+
+h1,
+h2,
+h3 {
+    line-height: 1.1;
+    margin: 0;
 }

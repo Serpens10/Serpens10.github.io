@@ -1,3 +1,29 @@
+.left {
+    width: 330px;
+}
+
+.left a {
+    display: flex;
+    font-family: 'Handlee', cursive;
+    font-size: 2em;
+    color: #65451F;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.left a:hover {
+    letter-spacing: 4px;
+    }
+
+    
+ 
+.nav__list a {
+    font-family: 'Patrick Hand', cursive;
+    color: #25160d;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
 
 .navigation-wrapper {
     height: 100px;
@@ -14,22 +40,8 @@
     /* border: 20px double #8fb34d;*/
 }
 
-.left {
-    width: 330px;
-}
 
-.left a {
-    display: flex;
-    font-family: 'Handlee', cursive;
-    font-size: 2em;
-    color: #65451F;
-    text-decoration: none;
-    transition: 0.5s;
-}
 
-.left a:hover {
-letter-spacing: 4px;
-}
 
 .navigation-wrapper > .middle {
     display: flex;
