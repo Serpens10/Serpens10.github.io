@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+
     <link rel="stylesheet" href="../Styles/navigation.css">
     <link rel="stylesheet" href="../Styles/middle.css">
     <link rel="stylesheet" href="../Styles/common.css">
@@ -22,88 +25,90 @@
 </head>
 <body>
     
-    <div class="navigation-wrapper">
-
+     <!-- start of header -->
+     <header>
         <div class="left">
 
-            <a href="../amouchi.html">Amouchi Thamazgha</a>
+            <a href="amouchi.html">Amouchi Thamazgha</a>
      
         </div>
 
-        <div class="middle">
-            
-            <div class="navigation">
-                <a href="../index.html">Home</a>
-            </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <spanc class="hamburger"></span>
+        </button>
 
-            <div class="navigation">
-                <a href="works.html">Works</a>
-            </div>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="Works/works.html" class="nav__link">My works</a></li>
+                <li class="nav__item"><a href="About.html" class="nav__link">About me</a></li>
+                <li class="nav__item"><a href="Contact.html" class="nav__link">Contact me</a></li>
+            </ul>
+        </nav>
+    </header>
 
-            <div class="navigation">
-                <a href="../About.html">About</a>
-            </div>
+    <!-- my work -->
 
-            <div class="navigation">
-                <a href="../Contact.html">Contact</a>
-            </div>
+    <section class="my-work" id="work">
 
-        </div>
+        <h2 class="section__title">My Work</h2>
+        <p class="section__subtitle">A selection of my range of work</p>
 
-        <div class="right">
-        
-            <div class="insta-icon">
-                <a href="https://www.instagram.com/k.welshe/" target="_blank">
-                     <i class="fa-brands fa-instagram"></i>
+        <div class="portfolio">
+
+            <div class="ink-portfolio">
+                <!-- portfolio item 01 -->
+                <a href="" class="portfolio__item">
+                    <img src="" alt="" class="portfolio__img">
                 </a>
-                
-            </div>
+            </div>  
 
-            <div class="share-icon">
-                <i class="fa-regular fa-share-from-square"></i>
-            </div>
+            <div class="oil-portfolio">
+                <!-- portfolio item 01 -->
+                <a href="" class="portfolio__item">
+                    <img src="" alt="" class="portfolio__img">
+                </a>
+            </div>   
+            
+            <div class="watercolor-portfolio">
+                <!-- portfolio item 01 -->
+                <a href="" class="portfolio__item">
+                    <img src="" alt="" class="portfolio__img">
+                </a>
+            </div>  
 
-    
+            <div class="portrait-portfolio">
+                <!-- portfolio item 01 -->
+                <a href="" class="portfolio__item">
+                    <img src="" alt="" class="portfolio__img">
+                </a>
+            </div>  
+
+            <div class="crochet-portfolio">
+                <!-- portfolio item 01 -->
+                <a href="" class="portfolio__item">
+                    <img src="" alt="" class="portfolio__img">
+                </a>
+            </div>  
+
+            <div class="knotting-portfolio">
+                <!-- portfolio item 01 -->
+                <a href="" class="portfolio__item">
+                    <img src="" alt="" class="portfolio__img">
+                </a>
+            </div>  
+
+            <div class="accessories-portfolio">
+                <!-- portfolio item 01 -->
+                <a href="" class="portfolio__item">
+                    <img src="" alt="" class="portfolio__img">
+                </a>
+            </div> 
+             
         </div>
 
-    </div>
 
-    <div class="body-ig">
-
-        <div class="subcategories">
-
-            <div class="fiberarts">
-
-                <a href="fiberarts/crochet.html"></a>
-
-            </div>
-
-            <div class="finearts">
-
-                <a href="finearts/finearts.html"></a>
-
-            </div>
-
-            <div class="accessories">
-
-                <a href="accessories/accessories.html"></a>
-
-            </div>
-
-            <div class="example">
-
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                    Eligendi consequuntur labore, excepturi aut nesciunt eius 
-                    recusandae! Nihil quidem itaque quos, ipsam aliquam harum consequuntur. 
-                    Itaque delectus voluptates exercitationem architecto distinctio?
-                    all sort
-                    of text
-                </p>
-            </div>
-
-        </div>
-        
-    </div>    
+    </section>
 
 
 

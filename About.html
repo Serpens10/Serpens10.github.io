@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+
     <link rel="stylesheet" href="Styles/navigation.css">
     <link rel="stylesheet" href="Styles/middle.css">
     <link rel="stylesheet" href="Styles/common.css">
@@ -22,51 +25,47 @@
 </head>
 <body>
     
-    <div class="navigation-wrapper">
-
+     <!-- start of header -->
+     <header>
         <div class="left">
 
             <a href="amouchi.html">Amouchi Thamazgha</a>
      
         </div>
 
-        <div class="middle">
-            
-            <div class="navigation">
-                <a href="index.html">Home</a>
-            </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <spanc class="hamburger"></span>
+        </button>
 
-            <div class="navigation">
-                <a href="Works/works.html">Works</a>
-            </div>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="Works/works.html" class="nav__link">My works</a></li>
+                <li class="nav__item"><a href="About.html" class="nav__link">About me</a></li>
+                <li class="nav__item"><a href="Contact.html" class="nav__link">Contact me</a></li>
+            </ul>
+        </nav>
+    </header>
 
-            <div class="navigation">
-                <a href="About.html">About</a>
-            </div>
+    <!-- about me section -->
 
-            <div class="navigation">
-                <a href="Contact.html">Contact</a>
-            </div>
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">Who I am</h2>
 
+        <p class="section__subtitle section__subtitle--about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum consequuntur aliquam eligendi, voluptate commodi officiis ex nemo earum dicta perferendis laboriosam, vero sapiente aspernatur tenetur!</p>
+        
+        <div class="about-me__body">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas tempora impedit quod aliquam nisi vitae vero voluptate numquam non. Repellat tempora rem vitae porro molestiae voluptatum voluptates libero cumque. Quidem, sit rem delectus minima exercitationem magni maxime veniam vel itaque sapiente corporis, pariatur natus enim sint eligendi dolorum saepe! Recusandae, fuga? Illo vitae quod sunt incidunt hic eaque fugit libero beatae, modi atque eos recusandae exercitationem quisquam reiciendis magnam dicta ex tempore similique reprehenderit illum enim nostrum eveniet. Neque, harum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo laborum consequatur alias labore maiores numquam voluptas facere corrupti, illo aspernatur sunt eligendi quia perferendis iure at et! Ratione, officiis inventore natus provident harum accusamus. Ab aperiam, provident quia, sit neque consectetur modi nulla hic dicta, autem doloribus alias nemo beatae laboriosam? Ullam commodi modi obcaecati optio expedita non similique a possimus quos nam ad quod eveniet, asperiores soluta?</p>
         </div>
 
-        <div class="right">
-        
-            <div class="insta-icon">
-                <a href="https://www.instagram.com/k.welshe/" target="_blank">
-                     <i class="fa-brands fa-instagram"></i>
-                </a>
-                
-            </div>
+        <img src="Images/myself/20230704_163454.jpg" alt="me in drawing class">
 
-            <div class="share-icon">
-                <i class="fa-regular fa-share-from-square"></i>
-            </div>
+    </section>
+    
 
-        
-        </div>
 
-    </div>
+
 
     <div class="footer">
 
