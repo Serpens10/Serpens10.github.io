@@ -17,6 +17,9 @@
    --fs-h2: 2.25rem;
    --fs-h3:1.25rem;
    --fs-body:1rem;
+
+   --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.45) ,
+        0.125em 0.125em 0.25em rgba(0, 0, 0, 0.2);
 }
 
 
@@ -91,24 +94,42 @@ font-weight: var(--fw-reg);
 }
 .section__subtitle--intro,
 .section__subtitle--about {
+    display: inline-block;
 background-color: var(--clr-accent);
+padding: .25em 2em;
 margin-bottom: 1em;
 
 }
 
+.intro-img {
+    box-shadow: var(--bs);
+}
+
 @media (min-width: 600px) {
     .intro {
+        display: grid;
         width: min-content;
         margin: 0 auto;
-        display: grid;
         column-gap: 1em;
         grid-template-areas: 
         'img title'
         'img subtitle' ;
         grid-template-columns: min-content max-content;
     }
+
     .intro-img {
         grid-area: img;
         min-width: 250px;
+        position: relative;
+        z-index: 2;
     }
+    .section__subtitle--intro {
+        align-self: start;
+        grid-column: -1/1;
+        grid-row: 2;
+        text-align: right;
+        position: relative;
+        left: -2em;
+        width: calc(100% + 2em);
+      }
 }
