@@ -1,61 +1,8 @@
-.body-ig {
+.nav {display: none;}
+
+/* intro section */
+
+.intro {
   position: relative;
-  height: 100%;
-  overflow: hidden;
- 
-  
-}
 
-
-.body-ig > .backback {
-/* background-image: url(../Images/stars.png); */
-position: absolute;
-height: 100%;
-width: 100%;
-/* background-size: 100%; */
-
-
-}
-
-.body-ig > .container {
-position: relative;
-max-width: 1227px;
-width: 90%;
-margin: auto;
-padding: 40px 80px;
-
-}
-
-.body-ig > .container > .words {
-    /* background-color: #abb367; */
-    /* width: 90%; */
-    
-    display: flex;
-    justify-content: center;
-
-}
-
-.body-ig > .container > .photo-gallery {
-  display: flex;
-  gap: 20px;
-}
-
-.body-ig > .container > .photo-gallery > .column {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-
-}
-
-.column > .photo img {
-max-width: 100%;
-max-height: 100%;
-object-fit: cover;
-
-}
-
-@media(max-width:768px) {
-  .photo-gallery {
-    flex-direction: column;
-  }
 }

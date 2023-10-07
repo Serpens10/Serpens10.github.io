@@ -20,12 +20,19 @@
 }
 
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
     :root {
-        --fs-h1: 4.5rem;
+        --fs-h1: 4rem;
         --fs-h2: 3.75rem;
         --fs-h3: 1.5rem;
         --fs-body: 1.125rem;
+    }
+}
+
+@media (max-width: 800px) and (min-width: 600px) {
+    #first::after {
+        content: "\a";
+        white-space: pre;
     }
 }
 
@@ -54,7 +61,7 @@ h1,
 h2,
 h3 {
     font-family: 'roboto' , sans-serif;
-    line-height: 1.1;
+    line-height: 1;
     margin: 0;
 }
 
@@ -62,6 +69,9 @@ h1 {font-size: var(--fs-h1);}
 h2 {font-size: var(--fs-h2);}
 h3 {font-size: var(--fs-h3);}
 
+section {
+    padding: 5em 2em;
+}
 
 .section__title {
     margin-bottom: .25em;
@@ -82,5 +92,23 @@ font-weight: var(--fw-reg);
 .section__subtitle--intro,
 .section__subtitle--about {
 background-color: var(--clr-accent);
+margin-bottom: 1em;
 
+}
+
+@media (min-width: 600px) {
+    .intro {
+        width: min-content;
+        margin: 0 auto;
+        display: grid;
+        column-gap: 1em;
+        grid-template-areas: 
+        'img title'
+        'img subtitle' ;
+        grid-template-columns: min-content max-content;
+    }
+    .intro-img {
+        grid-area: img;
+        min-width: 250px;
+    }
 }
