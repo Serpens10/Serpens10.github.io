@@ -5,46 +5,39 @@
 }
 
 :root {
-   
+
+   --fw-reg:300;
+   --fw-bold:900;
+
+   --clr-bg:#ffff;
+   --clr-text:#25160d;
+   --clr-accent:#f6deb1;
+
+   --fs-h1: 3rem;
+   --fs-h2: 2.25rem;
+   --fs-h3:1.25rem;
+   --fs-body:1rem;
 }
 
-body {
-font-size: 1rem;
-}
-
-h1 {
-    font-size: 3rem;
-}
-h2 {
-    font-size: 2.25rem;
-}
-h3 {
-    font-size: 1.25rem;
-}
 
 @media (min-width: 800px) {
-    h1 {
-        font-size: 4.5rem;
-    }
-    h2 {
-        font-size: 3.75rem;
-    }
-    h3 {
-        font-size: 1.5rem;
-    }
-    body {
-        font-size: 1.125rem;
+    :root {
+        --fs-h1: 4.5rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.125rem;
     }
 }
+
 
 /* general styles */
 
 body {
-    background-color: #ffff;
-    color: #25160d;
+    background-color: var(--clr-bg);
+    color: var(--clr-text);
     margin: 0;
     font-family: 'nunito sans' , sans-serif;
-    font-size: 1rem;
+    font-size: var(--fs-body);
     line-height: 1.6;
 }
 
@@ -52,6 +45,8 @@ img {
     display: block;
     max-width: 100%;
 }
+
+strong {font-weight: var(--fw-bold);}
 
 /* typography */
 
@@ -61,4 +56,31 @@ h3 {
     font-family: 'roboto' , sans-serif;
     line-height: 1.1;
     margin: 0;
+}
+
+h1 {font-size: var(--fs-h1);}
+h2 {font-size: var(--fs-h2);}
+h3 {font-size: var(--fs-h3);}
+
+
+.section__title {
+    margin-bottom: .25em;
+}
+
+.section__title--intro {
+font-weight: var(--fw-reg);
+}
+
+.section__title--intro strong {
+    display: block;
+}
+
+.section__subtitle {
+    margin: 0;
+    font-size: var(--fs-h3);
+}
+.section__subtitle--intro,
+.section__subtitle--about {
+background-color: var(--clr-accent);
+
 }
