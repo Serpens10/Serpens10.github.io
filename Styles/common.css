@@ -21,6 +21,9 @@
 
    --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.45) ,
         0.125em 0.125em 0.25em rgba(0, 0, 0, 0.2);
+
+    --bs2: -0.25em 0.25em 0.75em rgba(0, 0, 0, 0.45) ,
+        -0.125em 0.125em 0.25em rgba(0, 0, 0, 0.2);
 }
 
 
@@ -31,6 +34,7 @@
         --fs-h3: 1.5rem;
         --fs-body: 1.125rem;
     }
+    
 }
 
 @media (max-width: 800px) and (min-width: 600px) {
@@ -115,7 +119,7 @@ font-weight: var(--fw-reg);
 }
 .section__subtitle--intro,
 .section__subtitle--about {
-    display: inline-block;
+display: inline-block;
 background-color: var(--clr-accent);
 padding: .25em 2em;
 margin-bottom: 1em;
@@ -125,6 +129,10 @@ margin-bottom: 1em;
 .intro-img {
     box-shadow: var(--bs);
 }
+
+/* .about-img {
+    box-shadow: var(--bs);
+} */
 
 @media (min-width: 600px) {
     .intro {
@@ -152,8 +160,44 @@ margin-bottom: 1em;
         position: relative;
         left: -2em;
         width: calc(100% + 2em);
-      }
+    }
+
+      .about-me {
+        display: grid;
+        grid-template-columns: 1fr 250px;
+        margin: 0 auto;
+        column-gap: 2em;
+        grid-template-areas: 
+        'title img'
+        'subtitle img'
+        'text img' ;
+       
+    }
+    .section__title--about  {
+      grid-area: title;
+    }
+
+    .section__subtitle--about {
+        grid-column: 1/-1;
+        grid-row: 2;
+        position: relative;
+        left: -1em;
+        width: calc(100% + 2em);
+        padding-left: 1em;
+        padding-right: calc(250px + 4em);
+        /* margin-bottom: -.125em; */
+    }
+
+      
+    .about-img {
+        grid-area:img;
+        min-width: 250px;
+        position: relative;
+        z-index: 2;
+    }
 }
+
+
 .my-skills {
 background-color: var(--clr-bg-dark);
 background-image: url(../Images/background3.jpg);
@@ -204,3 +248,4 @@ text-align: center;
         margin-left: 2em;
     }
 }
+

@@ -1,5 +1,5 @@
 .left {
-    width: 330px;
+    width: 50%;
 }
 
 .left a {
@@ -15,6 +15,17 @@
     letter-spacing: 4px;
     }
 
+    @media (max-width: 800px) {
+        .left a {
+            font-size: 1.5em;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .left a:hover {
+            letter-spacing: 2px;
+        }
+    }
     
  
 .nav__list a {
