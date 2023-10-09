@@ -272,21 +272,13 @@ text-align: center;
     background-color: var(--clr-accent);
     padding: 2em;
 }
-.my-work > .categories ul {
+.my-work > .categories {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     margin: 0 auto;
     gap: 1em;
-   
 }
-.my-work > .categories li {
-    list-style-type: none;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
   
-        
-}
 
 .portfolio-title {
     padding: 1em;
