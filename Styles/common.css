@@ -49,7 +49,7 @@ strong {font-weight: var(--fw-bold);}
 
 .btn {
     display: inline-block;
-    padding: 0.5em 2.5em;
+    padding: 0.5em 1.5em;
     background: var(--clr-accent);
     color: var(--clr-text);
     text-decoration: none;
@@ -264,21 +264,21 @@ text-align: center;
     font-weight: var(--fw-bold);
      margin-bottom: 2em;
 }
-.my-work > .categories {
-    margin-bottom: 4em;
-    padding: 1em;
-}
+
 .portfolio {
     background-color: var(--clr-accent);
     padding: 2em;
 }
 .my-work > .categories {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 1em;
+    padding: 1em;
+    align-items: center;
 }
-  
+.category h3 {
+    font-size: 1em;
+}
 
 .portfolio-title {
     padding: 1em;
@@ -289,6 +289,7 @@ text-align: center;
 .portfolio-subtitle {
     text-decoration: none;
     color: var(--clr-text);
+   
 }
 
 .portfolio-images {
