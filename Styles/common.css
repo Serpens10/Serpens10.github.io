@@ -137,6 +137,11 @@ margin-bottom: 1em;
     }
    
 }
+@media (max-width: 600px) {
+.footer > .copyright {
+    font-size: 0.9em;
+}
+}
 
 @media (min-width: 600px) {
     .intro {
