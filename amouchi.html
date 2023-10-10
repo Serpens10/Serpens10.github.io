@@ -3,137 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Art Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+
+
+     <link rel="stylesheet" href="Styles/common.css">
     <link rel="stylesheet" href="Styles/navigation.css">
-    <link rel="stylesheet" href="Styles/middle.css">
-    <link rel="stylesheet" href="Styles/common.css">
+   
     <link rel="stylesheet" href="Styles/footer.css">
 
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css">
 
+  
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet"> 
+    <!-- for styling my name -->
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Licorice&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+    <!-- for the navigation elements -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- for the rest of the titles -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap" rel="stylesheet">
-
+    <!-- for the paragraphs -->
     
 </head>
 <body>
-    
-    <div class="navigation-wrapper">
 
+    <!-- start of header -->
+    <header>
         <div class="left">
 
             <a href="amouchi.html">Amouchi Thamazgha</a>
      
         </div>
 
-        <div class="middle">
-            
-            <div class="navigation">
-                <a href="index.html">Home</a>
-            </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <spanc class="hamburger"></span>
+        </button>
 
-            <div class="navigation">
-                <a href="works.html">Works</a>
-            </div>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="works.html" class="nav__link">My works</a></li>
+                <li class="nav__item"><a href="About.html" class="nav__link">About me</a></li>
+                <li class="nav__item"><a href="Contact.html" class="nav__link">Contact me</a></li>
+            </ul>
+        </nav>
+    </header>
 
-            <div class="navigation">
-                <a href="About.html">About</a>
-            </div>
 
-            <div class="navigation">
-                <a href="Contact.html">Contact</a>
-            </div>
+    <!-- intro section -->
 
-        </div>
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hi! I am <strong><span id="first">Amouchi</span><span id="second"> Thamazgha</span></strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro"><span id="first">Digital And Traditional</span> <span id="second">Artist</span></p>
+        <img src="Images/myself/20230704_163454.jpg" alt="myself" class="intro-img">
 
-        <div class="right">
-        
-            <div class="insta-icon">
-                <a href="https://www.instagram.com/k.welshe/" target="_blank">
-                     <i class="fa-brands fa-instagram"></i>
-                </a>
-                
-            </div>
-
-            <div class="share-icon">
-                <i class="fa-regular fa-share-from-square"></i>
-            </div>
-
+    </section>
     
+
+    <!-- what I do -->
+
+    <section class="my-skills" id="works">
+
+        <h2 class="section__title section__title--works">What I do</h2>
+
+        <div class="works">
+            <div class="work-type">
+                <h3>Traditional Art</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore sunt dolorum maxime.</p>
+            </div>      
+            <!-- close type of work -->
+            <div class="work-type">
+                <h3>Digital Art</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem, quibusdam?</p>
+            </div>      
+            <!-- close type of work -->
+            <div class="work-type">
+                <h3>Fiber Art</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio corporis fuga sint ipsa libero culpa obcaecati molestiae!</p>
+            </div>      
+            <!-- close type of work -->
         </div>
 
-    </div>
+        <a href="works.html" class="btn">My Work</a>
 
-    <div class="body-ig">
-        <div class="words">
-        <p>summary about me goes here</p>
-        </div>
-
-        <div class="images">
-            <img src="Images/homepage/20221123_113705.jpg" alt="" style="width: 50%;">
-            <img src="Images/homepage/20230201_161508.jpg" alt="" style="width: 50%;">
-            <img src="Images/homepage/20230307_165620.jpg" alt="" style="width: 50%;">
-            <img src="Images/homepage/20230704_163443.jpg" alt="" style="width: 50%;">
-            <img src="Images/homepage/20230704_163454.jpg" alt="" style="width: 50%;">
-            <img src="Images/homepage/20230924_193909.jpg" alt="" style="width: 50%;">
-
-
-        </div>
-
-    </div>
-
+    </section>
 
     <div class="footer">
 
         <div class="navigation-links">
 
             <div class="navigation">
-                <a href="index.html">Home</a>
+                <a href="index.html"><h3>Home</h3></a>
             </div>
 
             <div class="navigation">
-                <a href="works.html">Works</a>
+                <a href="works.html"><h3>Works</h3></a>
             </div>
 
             <div class="navigation">
-                <a href="About.html">About</a>
+                <a href="About.html"><h3>About</h3></a>
             </div>
 
             <div class="navigation">
-                <a href="Contact.html">Contact</a>
+                <a href="Contact.html"><h3>Contact</h3></a>
             </div>
 
         </div>   
         
         <div class="social-links">
 
-            <div class="insta-icon">
+            <div class="social-icon">
                 <a href="https://www.instagram.com/k.welshe/" target="_blank">
-                     <i class="fa-brands fa-instagram"></i>
+                     <i class="fa-brands fa-square-instagram"></i>
                 </a>
                 
             </div>
 
-            <div class="linkedin-icon">
-                <p>linkedin</p>
+            <div class="social-icon">
+                <a href="https://www.linkedin.com/in/thamazgha-amouchi-3446ba239/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
 
             </div>
 
-            <div class="social-media">
+            <div class="social-icon">
                 <a href="https://github.com/Serpens10" target="_blank">
-                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-square-github"></i>
                 </a>
             </div>
 
-
-            <div class="share-icon">
-                <i class="fa-regular fa-share-from-square"></i>
+            <div class="social-icon">
+                <i class="fa-solid fa-share-from-square"></i>
             </div>
-
 
         </div>
 

@@ -1,10 +1,15 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em;
+}
+
 .left {
     width: 50%;
-    margin-left: 1.5em;
 }
 
 .left a {
-    display: flex;
+    
     font-family: 'Handlee', cursive;
     font-size: 2em;
     color: #25160d;
@@ -28,15 +33,43 @@
         }
     }
     
- 
-.nav__list a {
-    font-family: 'Patrick Hand', cursive;
+ .nav {
+    position: fixed;
+    background: var(--clr-accent);
+    color: var(--clr-bg);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    transform: translatex(100%);
+    transition: transform 250ms cubic-bezier(.5, 0, .5, 1) ;
+ }
+
+.nav__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    align-items: center;
+    margin: 0;
+    padding: 0;
     color: #25160d;
-    font-size: 1.5rem;
+    
+}
+.nav__link {
+    color: inherit;
     text-decoration: none;
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-h3);
+    transition: 0.5s;
 }
 
-
+.nav__link:hover {
+    opacity: 0.8;
+    letter-spacing: 4px;
+}
 .navigation-wrapper {
     height: 100px;
     /* background-color: #abb367; */
