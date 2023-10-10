@@ -108,7 +108,7 @@ transition: 0.5s;
 .navigation-wrapper > .right > .share-icon i {
     color: #535204;
 text-decoration: none;
-font-size: 1.1em;
+/* font-size: 1.1em; */
 transition: 0.5s;
 
 }
