@@ -88,6 +88,10 @@ h3 {font-size: var(--fs-h3);}
 section {
     padding: 5em 2em;
 }
+.intro {
+    position: relative;
+  
+  }
 
 .section__title {
     margin-bottom: .25em;
@@ -117,6 +121,19 @@ margin-bottom: 1em;
 .intro-img {
     box-shadow: var(--bs);
 }
+
+.about-me {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+   
+  }
+  
+  
+  .about-me img {
+    box-shadow: var(--bs2);
+  }
+  
 
 /* MEDIA QUERIES */
 
