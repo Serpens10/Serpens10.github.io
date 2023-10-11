@@ -32,6 +32,41 @@ header {
             letter-spacing: 2px;
         }
     }
+
+    .nav-toggle {
+        padding: .5em;
+        background: transparent;
+        border: 0;
+        cursor: pointer;
+        position: absolute;
+        right: 1em;
+        top: 2.5em;
+        z-index: 1000;
+    }
+
+    .hamburger {
+        display: block;
+        position: relative;
+    }
+    .hamburger,
+    .hamburger::before,
+    .hamburger::after {
+        background: var(--clr-text);
+        width: 2em;
+        height: 3px;
+        border-radius: 1em;
+        transition: transform 250ms ease-in-out;
+    }
+
+    .hamburger::before,
+    .hamburger::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+    .hamburger::before {top:6px;}
+    .hamburger::after {bottom: 6px;}
     
  .nav {
     position: fixed;
@@ -70,92 +105,5 @@ header {
     opacity: 0.8;
     letter-spacing: 4px;
 }
-.navigation-wrapper {
-    height: 100px;
-    /* background-color: #abb367; */
-    /* background: linear-gradient(90deg, #cfecd0, #ffc5ca); */
-    /* background-color: #f6d59c; */
-    background: linear-gradient(180deg, #f3bf8c, #f6deb1);
-    color: #473C33;
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    padding: 40px 100px;
-    /* box-shadow: 0px 100px 143px -95px rgba(250,107,126,0.88) inset; */
-    /* border: 20px double #8fb34d;*/
-}
 
-
-
-
-.navigation-wrapper > .middle {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 22px;
-    width: 400px;
-    text-decoration: none;
-    
-    
-}
-
-.navigation-wrapper > .middle > .navigation {
-    width: 80px ;
-    /* align-items: center; */
-    text-align: center;
-}
-
-.navigation-wrapper > .middle > .navigation a {
-    text-decoration: none;
-    font-family: 'Patrick Hand', cursive;
-    color: #535204;
-    transition: 0.5s;
-   
-}
-
-.navigation-wrapper > .middle > .navigation a:hover {
-color: #523906;
-font-size: 1.1em;
-}
-
-
-
-.navigation-wrapper > .right {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-}
-
-.navigation-wrapper > .right > .insta-icon i {
-color: #535204;
-text-decoration: none;
-font-size: 1.2em;
-transition: 0.5s;
-
-}
-.navigation-wrapper > .right > .insta-icon i:hover {
-    color: #3F2305;
-
-}
-.navigation-wrapper > .right > .share-icon i {
-    color: #535204;
-text-decoration: none;
-/* font-size: 1.1em; */
-transition: 0.5s;
-
-}
-.navigation-wrapper > .right > .share-icon i:hover {
-    color: #3F2305;
-}
-
-.navigation-wrapper > .right > .bars-icon i {
-    color: #535204;
-    text-decoration: none;
-    font-size: 1.2em;
-    transition: 0.5s;
-}
-.navigation-wrapper > .right > .bars-icon i:hover {
-    color: #3F2305;
-}
 
