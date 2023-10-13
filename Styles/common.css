@@ -313,9 +313,9 @@ text-align: center;
     font-size: 1em;
 }
 
-.portfolio-title {
+/* .portfolio-title {
     padding: 1em;
-}
+} */
 .portfolio-title a {
     outline: none;
 }
@@ -336,8 +336,8 @@ text-align: center;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-auto-flow: dense;
-    margin: 2em auto;
-    gap: 1em;
+    padding: 0 3em;
+    gap: 2em;
 }
 .small-row {
     display: grid;
