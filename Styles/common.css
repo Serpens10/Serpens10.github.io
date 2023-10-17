@@ -424,6 +424,7 @@ form {
 form input {
     border: 0;
     width: 90%;
+    font-size: var(--fs-body);
     margin: 10px auto;
     padding: 20px;
     border: none;
@@ -436,6 +437,8 @@ form textarea {
     margin: 20px auto;
     width: 90%;
     max-width: 90%;
+    font-family: var(--fs-body);
+    font-size: var(--fs-body);
     padding: 1.5rem 2rem;
     border-radius: 3px;
     border: 2px solid var(--clr-text);
