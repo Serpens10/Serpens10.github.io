@@ -55,6 +55,7 @@ strong {font-weight: var(--fw-bold);}
 .btn {
     display: inline-block;
     padding: 0.5em 1.5em;
+    border-radius: 2px;
     background: var(--clr-accent);
     color: var(--clr-text);
     text-decoration: none;
@@ -411,16 +412,39 @@ form {
     margin-bottom: 40px;
     
 }
-.contact-container h4 {
+.headline {
+    display: flex;
+    justify-content: center;
+}
+.headline h4 {
     letter-spacing: 2px;
     font-weight: var(--fw-bold);
     color: var(--clr-text);
 }
-form input, form textarea {
+form input {
     border: 0;
+    width: 90%;
     margin: 10px auto;
     padding: 20px;
     border: none;
     border-bottom: 2px solid var(--clr-text);
     display: block;
+}
+
+form textarea {
+    height: 250px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 90%;
+    padding: 1.5rem 2rem;
+    border-radius: 3px;
+    border: 2px solid var(--clr-text);
+    font-size: var(--fs-body);
+    display: block;
+    transition: all 0.3s;
+}
+form button {
+    width: 20%;
+    margin: 0 auto;
+    border: none;
 }
