@@ -463,12 +463,11 @@ form button {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-bottom: 2em;
 
 }
 .contact-container-2 > .social-icon {
     padding: 1em;
-    
-    
 }
 .contact-container-2 > .social-icon a {
     color: var(--clr-text);
@@ -476,4 +475,8 @@ form button {
 }
 .contact-container-2 >.social-icon:hover {
     opacity: 100%;
+}
+
+.contact-section {
+    padding: 5em 2em 3em 2em;
 }
