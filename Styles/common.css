@@ -375,6 +375,10 @@ border-radius: 10px;
     max-height: 100%;
     border-radius: 10px;
 }
+/* #rowspan :nth-child(1) {
+    grid-row: 2 / 4;
+} */
+
 
 .portfolio__img-big {
     background-color: var(--clr-accent);
@@ -450,4 +454,26 @@ form button {
     width: 20%;
     margin: 0 auto;
     border: none;
+}
+
+.contact-container-2 {
+    width: 100%;
+    background:var(--clr-accent);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.contact-container-2 > .social-icon {
+    padding: 1em;
+    
+    
+}
+.contact-container-2 > .social-icon a {
+    color: var(--clr-text);
+    text-decoration: none;
+}
+.contact-container-2 >.social-icon:hover {
+    opacity: 100%;
 }
