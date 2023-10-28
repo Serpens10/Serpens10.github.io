@@ -334,6 +334,9 @@ text-align: center;
     margin: 2em auto;
     gap: 1em;
 }
+.portfolio-images p {
+   padding: 0 5px;
+}
 
 .big-row {
     display: grid;
